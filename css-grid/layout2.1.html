@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0 auto;
+            font: 1em 'Quattrocento', serif;
+            color: gray;
+        }
+
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto minmax(auto, 1fr) minmax(100px, auto);
+        }
+
+        header{
+            grid-column: 1 / 5;
+        }
+        sidebar{
+            grid-column: 1 / 2;
+            
+            
+        }
+        main{
+            grid-column: 2 / 5;
+        }
+        footer{
+            grid-column: 1 / 5;
+        }
+        
+        header,
+        footer {
+            background: lightgray;
+            color: gray;
+            font-size: 1.2em;
+        }
+
+        header,
+        main,
+        sidebar{
+            padding: 20px;
+        }
+        main {
+            background: salmon;
+            color: ghostwhite;
+        }        
+        footer {
+            font-size: 0.85em;
+            padding: 10px 20px; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>header</header> 
+        <sidebar>
+           <p>sidebar</p>
+            <p>"Desiderata" (Latin: "things desired") is an early 1920s prose poem by the American writer Max Ehrmann.</p>
+        </sidebar>
+        <main role="main">
+            <h1>Desiderata</h1>
+            <p>GO PLACIDLY amid the noise and the haste, and remember what peace there may be in silence. As far as possible, without surrender, be on good terms with all persons.</p>
+
+            <p>Speak your truth quietly and clearly; and listen to others, even to the dull and the ignorant; they too have their story.</p>
+
+            <p>Avoid loud and aggressive persons; they are vexatious to the spirit. If you compare yourself with others, you may become vain or bitter, for always there will be greater and lesser persons than yourself.</p>
+
+            <p>Enjoy your achievements as well as your plans. Keep interested in your own career, however humble; it is a real possession in the changing fortunes of time.</p>
+
+            <p>Exercise caution in your business affairs, for the world is full of trickery. But let this not blind you to what virtue there is; many persons strive for high ideals, and everywhere life is full of heroism.</p>
+
+            <p>Be yourself. Especially do not feign affection. Neither be cynical about love; for in the face of all aridity and disenchantment, it is as perennial as the grass.</p>
+
+            <p>Take kindly the counsel of the years, gracefully surrendering the things of youth.</p>
+
+            <p>Nurture strength of spirit to shield you in sudden misfortune. But do not distress yourself with dark imaginings. Many fears are born of fatigue and loneliness.</p>
+
+            <p>Beyond a wholesome discipline, be gentle with yourself. You are a child of the universe no less than the trees and the stars; you have a right to be here.</p>
+
+            <p>And whether or not it is clear to you, no doubt the universe is unfolding as it should. Therefore be at peace with God, whatever you conceive Him to be. And whatever your labors and aspirations, in the noisy confusion of life, keep peace in your soul. With all its sham, drudgery and broken dreams, it is still a beautiful world. Be cheerful. Strive to be happy.</p>
+
+            <p>By Max Ehrmann &copy; 1927<br>
+                Original text</p>
+        </main>
+        <footer>footer row is 100px height, always at the bottom</footer>
+    </div>
+
+</body>
+
+</html>
