@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0 auto;
+            font: 1em 'Quattrocento', serif;
+            color: gray;
+        }
+
+        img {
+            max-width: 100%;
+            min-width: 100px;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header,
+        footer {
+            background: lightgray;
+            color: gray;
+            font-size: 1.2em;
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        footer {
+            font-size: 0.85em;
+            padding: 10px 20px;
+        }
+
+        main {
+            background: salmon;
+            color: ghostwhite;
+            flex: 1;
+            padding: 20px;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+/*            grid-template-rows: repeat(4, minmax(300px, auto));*/
+        }
+
+        .tile {
+            background: aliceblue;
+            color: dimgray;
+            padding: 20px;
+            border-radius: 4px;
+        }
+
+        .tile h3 {
+            margin: 0;
+            padding: 0 0 5px 0;
+        }
+
+        .tile a {
+            color: dimgray;
+            text-decoration: none;
+        }
+
+        .tile ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        .tile ul a {
+            display: block;
+        }
+
+        .tile ul .tag {
+            font-size: 0.80em;
+            text-transform: uppercase;
+            color: sandybrown;
+        }
+
+        .tile ul .date {
+            font-size: 0.80em;
+            color: darkgray
+        }
+
+        .tile ul.list1 li {
+            border-top: 1px dashed dimgray;
+            padding: 10px 0;
+        }
+
+
+
+
+        .span4 {
+            grid-column: span 4;
+        }
+
+        .span3 {
+            grid-column: span 3;
+        }
+
+        .span2 {
+            grid-column: span 2;
+        }
+
+        .inset {
+            background: white;
+            color: black;
+            mix-blend-mode: screen;
+
+            position: absolute;
+            bottom: 20%;
+            left: 20px;
+            border-radius: 0 0 8px 0;
+            opacity: 0.65;
+
+        }
+
+        .inset>span {
+            display: block;
+            padding: 10px;
+        }
+        
+        .curve{
+            width: 33%; 
+            height: 50%; 
+            float: left;
+            margin-right: 4rem; 
+            border-radius: 50%;
+            -webkit-shape-outside:circle();
+            shape-outside:circle();
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>header</header>
+        <main role="main">
+            <div class="tile span2" style="position: relative;">
+                <h1 class="inset"><span>Featured Content</span></h1>
+                <img src="images/2.jpg" alt="">
+            </div>
+            <div class="tile">
+                <h3>Top Stories</h3>
+                <ul class="list1">
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tile">
+                <h3>Category</h3>
+                <img src="images/1.jpg" alt="">
+                <ul class="list1">
+                    <li><a href="#">Article Link</a></li>
+                    <li><a href="#">Article Link</a></li>
+                    <li><a href="#">Article Link</a></li>
+                </ul>
+            </div>
+            <div class="tile">
+                <h3>Category</h3>
+                <ul class="list1">
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tile">
+                <img src="images/1.jpg" alt="">
+                <p>GO PLACIDLY amid the noise and the haste, and remember what peace there may be in silence. As far as possible, without surrender, be on good terms with all persons.</p>
+            </div>
+            <div class="tile">
+                <img src="images/2.jpg" alt="">
+                <p>Speak your truth quietly and clearly; and listen to others, even to the dull and the ignorant; they too have their story.</p>
+            </div>
+            <div class="tile">
+                <img src="images/3.jpg" alt="">
+                <p>Avoid loud and aggressive persons; they are vexatious to the spirit. If you compare yourself with others, you may become vain or bitter, for always there will be greater and lesser persons than yourself.</p>
+            </div>
+            <div class="tile span2">
+                <h3>More Stories</h3>
+                <ul class="list1">
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                    <li>
+                        <a href="#">Article Link</a>
+                        <span class="tag">Tag</span>
+                        <span class="date">01/01/2019</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="tile span2">
+                <h3>Highlight</h3>
+                <img src="images/3.jpg" alt="" class="curve">
+                <p>Enjoy your achievements as well as your plans. Keep interested in your own career, however humble; it is a real possession in the changing fortunes of time. Exercise caution in your business affairs, for the world is full of trickery. But let this not blind you to what virtue there is; many persons strive for high ideals, and everywhere life is full of heroism.</p>
+
+                <p>Be yourself. Especially do not feign affection. Neither be cynical about love; for in the face of all aridity and disenchantment, it is as perennial as the grass.</p>
+            </div>
+        </main>
+        <footer>footer set always at the bottom</footer>
+    </div>
+
+</body>
+
+</html>
